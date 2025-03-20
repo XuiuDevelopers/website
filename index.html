@@ -1,448 +1,589 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Website</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Xuiu Developers</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-</head>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap");
 
-<body style="font-family: 'JetBrains Mono'; font-style: normal;">
+    * {
+      font-family: "Noto Sans";
+      font-weight: 450;
+      text-decoration: none;
+      color: #cad3f5;
+      background: #181926;
+    }
+
+    button {
+      background: #c6a0f6;
+      color: #181926;
+      border: 0px;
+      padding: 1%;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    a {
+      color: #8aadf4;
+    }
+
+    hr {
+      background: #cad3f5;
+      height: 1px;
+      border: 0;
+    }
+  </style>
+
+  <body>
     <header>
-        <nav>
-            <h1>Xuiu Developer</h1>
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Apps</a></li>
-                <li><a href="#">Docs</a></li>
-                <li><a href="#">Support</a></li>
-            </ul>
-        </nav>
+      <nav>
+        <h1>Website</h1>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Developers</a></li>
+          <li><a href="#">Apps</a></li>
+        </ul>
+      </nav>
     </header>
 
-    <main style="min-height: 100vh;">
-        <ol>
-            <hr>
-            <li>
-                <article>
-                    <h3>
-                        <p>
-                            <font>gh</font>
-                        </p>
-                    </h3>
-                    <h4>
-                        <p>Gnome 48 has been released <a href="#">Hello</a> view more to see</p>
-                    </h4>
-                    <button>
-                        Hello
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Linux Kernel 6.4 Features</h3>
-                    <h4>
-                        <p>Linux Kernel 6.4 introduces several new features, including better hardware support. <a
-                                href="#">Read more</a></p>
-                    </h4>
-                    <button>
-                        Read More
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Ubuntu 23.04 Released</h3>
-                    <h4>
-                        <p>Ubuntu 23.04 is now available with new enhancements and features. <a href="#">Explore it
-                                now</a></p>
-                    </h4>
-                    <button>
-                        Explore
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Fedora 39: A New Era</h3>
-                    <h4>
-                        <p>Fedora 39 has been officially launched with cutting-edge software updates. <a href="#">Check
-                                it out</a></p>
-                    </h4>
-                    <button>
-                        Check it out
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>OpenSUSE Leap 15.6</h3>
-                    <h4>
-                        <p>OpenSUSE Leap 15.6 focuses on stability and performance improvements. <a href="#">Find out
-                                more</a></p>
-                    </h4>
-                    <button>
-                        Find out more
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Linux Mint 21.2 Update</h3>
-                    <h4>
-                        <p>Linux Mint 21.2 comes with enhanced features and better performance. <a href="#">Learn
-                                more</a></p>
-                    </h4>
-                    <button>
-                        Learn more
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Arch Linux 2025: What’s New?</h3>
-                    <h4>
-                        <p>Arch Linux 2025 brings new changes, focusing on rolling releases. <a href="#">Check the
-                                release notes</a></p>
-                    </h4>
-                    <button>
-                        Check the release notes
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Debian 12 Overview</h3>
-                    <h4>
-                        <p>Debian 12 introduces long-term stability with new packages and security updates. <a
-                                href="#">View full details</a></p>
-                    </h4>
-                    <button>
-                        View full details
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Manjaro 22: A User-Friendly Distro</h3>
-                    <h4>
-                        <p>Manjaro 22 is known for its simplicity and usability. <a href="#">Find out what’s new</a></p>
-                    </h4>
-                    <button>
-                        Find out what’s new
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Pop!_OS 23 Released</h3>
-                    <h4>
-                        <p>Pop!_OS 23 offers several new features and stability improvements. <a href="#">Check out the
-                                features</a></p>
-                    </h4>
-                    <button>
-                        Check out the features
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Kali Linux 2025: What’s Next?</h3>
-                    <h4>
-                        <p>Kali Linux 2025 introduces more tools for security professionals. <a href="#">Learn more</a>
-                        </p>
-                    </h4>
-                    <button>
-                        Learn more
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Linux Command Line Tips and Tricks</h3>
-                    <h4>
-                        <p>Learn new and efficient ways to work with the Linux terminal. <a href="#">Explore tips</a>
-                        </p>
-                    </h4>
-                    <button>
-                        Explore tips
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Best Linux Distros for 2025</h3>
-                    <h4>
-                        <p>Check out the best Linux distros to use in 2025 for various purposes. <a href="#">Read full
-                                article</a></p>
-                    </h4>
-                    <button>
-                        Read full article
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>How to Install Linux Mint on Your PC</h3>
-                    <h4>
-                        <p>A step-by-step guide to installing Linux Mint and getting started. <a href="#">Learn more</a>
-                        </p>
-                    </h4>
-                    <button>
-                        Learn more
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Linux Security: Best Practices</h3>
-                    <h4>
-                        <p>Essential Linux security practices to keep your system safe. <a href="#">Read more</a></p>
-                    </h4>
-                    <button>
-                        Read more
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Getting Started with Docker on Linux</h3>
-                    <h4>
-                        <p>How to set up Docker and containers on your Linux machine. <a href="#">Explore Docker</a></p>
-                    </h4>
-                    <button>
-                        Explore Docker
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Linux System Monitoring Tools</h3>
-                    <h4>
-                        <p>Best tools to monitor your Linux system and optimize performance. <a href="#">Learn more</a>
-                        </p>
-                    </h4>
-                    <button>
-                        Learn more
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Understanding SELinux on Linux</h3>
-                    <h4>
-                        <p>A deep dive into SELinux and its role in security on Linux systems. <a href="#">Read full
-                                article</a></p>
-                    </h4>
-                    <button>
-                        Read full article
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>How to Use Git on Linux</h3>
-                    <h4>
-                        <p>Master Git commands and workflows for developers on Linux. <a href="#">Start using Git</a>
-                        </p>
-                    </h4>
-                    <button>
-                        Start using Git
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Linux Filesystem Basics</h3>
-                    <h4>
-                        <p>Understanding the Linux filesystem hierarchy and structure. <a href="#">Learn more</a></p>
-                    </h4>
-                    <button>
-                        Learn more
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Setting Up a LAMP Stack on Linux</h3>
-                    <h4>
-                        <p>How to install and configure a LAMP stack for web development on Linux. <a href="#">Read the
-                                guide</a></p>
-                    </h4>
-                    <button>
-                        Read the guide
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Linux Networking Tools</h3>
-                    <h4>
-                        <p>Essential networking tools every Linux user should know. <a href="#">Explore tools</a></p>
-                    </h4>
-                    <button>
-                        Explore tools
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>How to Manage Packages on Linux</h3>
-                    <h4>
-                        <p>Learn how to use package managers like APT, DNF, and YUM on Linux. <a href="#">Get
-                                started</a></p>
-                    </h4>
-                    <button>
-                        Get started
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Linux Kernel Modules Explained</h3>
-                    <h4>
-                        <p>An introduction to Linux kernel modules and how to manage them. <a href="#">Learn more</a>
-                        </p>
-                    </h4>
-                    <button>
-                        Learn more
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>How to Create a Bootable USB Drive for Linux</h3>
-                    <h4>
-                        <p>Steps to create a bootable USB drive for installing Linux on your system. <a href="#">Get the
-                                steps</a></p>
-                    </h4>
-                    <button>
-                        Get the steps
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Linux for Beginners</h3>
-                    <h4>
-                        <p>Everything a beginner needs to know about using Linux. <a href="#">Start learning</a></p>
-                    </h4>
-                    <button>
-                        Start learning
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Systemd: What You Need to Know</h3>
-                    <h4>
-                        <p>Understanding Systemd and how it works on Linux systems. <a href="#">Read more</a></p>
-                    </h4>
-                    <button>
-                        Read more
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Linux File Permissions Explained</h3>
-                    <h4>
-                        <p>Learn how to manage file permissions and access control in Linux. <a href="#">Learn more</a>
-                        </p>
-                    </h4>
-                    <button>
-                        Learn more
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Managing Linux Users and Groups</h3>
-                    <h4>
-                        <p>How to create and manage users and groups on a Linux system. <a href="#">Start learning</a>
-                        </p>
-                    </h4>
-                    <button>
-                        Start learning
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Introduction to Bash Scripting</h3>
-                    <h4>
-                        <p>Get started with Bash scripting for automation on Linux. <a href="#">Learn to script</a></p>
-                    </h4>
-                    <button>
-                        Learn to script
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Best Linux Text Editors</h3>
-                    <h4>
-                        <p>Discover the best text editors for coding on Linux. <a href="#">Find out more</a></p>
-                    </h4>
-                    <button>
-                        Find out more
-                    </button>
-                </article>
-            </li>
-            <hr>
-            <li>
-                <article>
-                    <h3>Setting Up a Linux Web Server</h3>
-                    <h4>
-                        <p>Learn how to set up a reliable web server using Linux. <a href="#">Read the tutorial</a></p>
-                    </h4>
-                    <button>
-                        Read the tutorial
-                    </button>
-                </article>
-            </li>
-            <hr>
-        </ol>
+    <main>
+      <ol>
+        <li>
+          <article>
+            <h3>Understanding Linux: A Comprehensive Guide</h3>
+            <h4>
+              Dive into the world of Linux, its history, and why it's a
+              preferred choice for many users and enterprises.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Top 10 Linux Distributions for Beginners</h3>
+            <h4>
+              Explore the best Linux distributions that are user-friendly and
+              perfect for those new to the Linux environment.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux vs. Windows: Which OS is Better for You?</h3>
+            <h4>
+              Compare the features, performance, and security of Linux and
+              Windows to decide which operating system suits your needs.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Mastering the Linux Command Line</h3>
+            <h4>
+              Learn essential Linux commands and tips to enhance your
+              productivity and efficiency in the terminal.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>The Role of Linux in Modern Computing</h3>
+            <h4>
+              Discover how Linux powers various technologies, from servers to
+              smartphones and IoT devices.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Securing Your Linux System: Best Practices</h3>
+            <h4>
+              Implement these security measures to protect your Linux system
+              from potential threats and vulnerabilities.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Scientific Computing</h3>
+            <h4>
+              Explore why Linux is the preferred operating system for scientific
+              research and data analysis.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Setting Up a Linux Home Server</h3>
+            <h4>
+              Step-by-step guide to configuring a Linux-based home server for
+              file sharing, media streaming, and more.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>The Future of Linux in Cloud Computing</h3>
+            <h4>
+              Learn how Linux is shaping the cloud computing landscape and its
+              impact on enterprise IT.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux Gaming: Myths and Realities</h3>
+            <h4>
+              Explore the current state of gaming on Linux and debunk common
+              myths about performance and compatibility.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Customizing Your Linux Desktop</h3>
+            <h4>
+              Personalize your Linux desktop environment with themes, icons, and
+              extensions to enhance your user experience.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Developers: Essential Tools and Tips</h3>
+            <h4>
+              Discover the must-have tools and tips for developers working in a
+              Linux environment.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>The Impact of Linux on Open Source Software</h3>
+            <h4>
+              Understand how Linux has influenced the open source movement and
+              fostered innovation in software development.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux Networking Basics</h3>
+            <h4>
+              Learn the fundamentals of networking in Linux, including
+              configuration and troubleshooting tips.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Education: Benefits and Implementation</h3>
+            <h4>
+              Explore how Linux can be used in educational institutions to
+              enhance learning and reduce costs.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux Performance Tuning</h3>
+            <h4>
+              Optimize your Linux system's performance with these advanced
+              tuning techniques and tools.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux in Embedded Systems</h3>
+            <h4>
+              Discover the role of Linux in embedded systems and its advantages
+              over other operating systems.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux Security Auditing</h3>
+            <h4>
+              Conduct a comprehensive security audit of your Linux system to
+              identify and mitigate vulnerabilities.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Data Science</h3>
+            <h4>
+              Learn how Linux is used in data science for data analysis, machine
+              learning, and big data processing.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux Virtualization Solutions</h3>
+            <h4>
+              Explore various virtualization technologies available on Linux and
+              their use cases.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for IoT Development</h3>
+            <h4>
+              Understand how Linux is used in IoT development and the benefits
+              it offers for connected devices.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux Backup and Recovery</h3>
+            <h4>
+              Implement effective backup and recovery strategies to protect your
+              data on Linux systems.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Cybersecurity Professionals</h3>
+            <h4>
+              Discover the essential Linux tools and techniques used by
+              cybersecurity professionals to secure systems and networks.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux Containerization with Docker</h3>
+            <h4>
+              Learn how to use Docker on Linux to create, manage, and deploy
+              containerized applications.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for DevOps</h3>
+            <h4>
+              Explore how Linux is used in DevOps practices to automate and
+              streamline software development and deployment.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux File System Hierarchy</h3>
+            <h4>
+              Understand the Linux file system hierarchy and how to manage files
+              and directories effectively.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Multimedia Production</h3>
+            <h4>
+              Discover the best Linux tools and applications for multimedia
+              production, including audio and video editing.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux System Monitoring</h3>
+            <h4>
+              Learn how to monitor your Linux system's performance and resources
+              using various tools and techniques.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Web Development</h3>
+            <h4>
+              Explore the essential Linux tools and environments for web
+              development and deployment.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux Automation with Shell Scripting</h3>
+            <h4>
+              Automate repetitive tasks on Linux using shell scripting and
+              improve your productivity.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Machine Learning</h3>
+            <h4>
+              Learn how Linux is used in machine learning for model training,
+              deployment, and scalability.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux Troubleshooting Guide</h3>
+            <h4>
+              Diagnose and resolve common issues on Linux systems with this
+              comprehensive troubleshooting guide.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Network Administration</h3>
+            <h4>
+              Discover the essential Linux tools and techniques for network
+              administration and management.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Database Management</h3>
+            <h4>
+              Learn how to manage databases on Linux using popular database
+              management systems like MySQL and PostgreSQL.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for High-Performance Computing</h3>
+            <h4>
+              Explore how Linux is used in high-performance computing for
+              scientific research and data analysis.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Artificial Intelligence</h3>
+            <h4>
+              Understand the role of Linux in artificial intelligence and the
+              tools available for AI development.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Blockchain Development</h3>
+            <h4>
+              Learn how Linux is used in blockchain development and the benefits
+              it offers for decentralized applications.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Game Development</h3>
+            <h4>
+              Discover the tools and frameworks available on Linux for game
+              development and deployment.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Robotics</h3>
+            <h4>
+              Explore how Linux is used in robotics for development, simulation,
+              and control of robotic systems.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Big Data Analytics</h3>
+            <h4>
+              Learn how Linux is used in big data analytics for processing and
+              analyzing large datasets.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Quantum Computing</h3>
+            <h4>
+              Understand the role of Linux in quantum computing and the tools
+              available for quantum development.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Augmented Reality</h3>
+            <h4>
+              Explore how Linux is used in augmented reality for development and
+              deployment of AR applications.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Virtual Reality</h3>
+            <h4>
+              Learn how Linux is used in virtual reality for development and
+              deployment of VR applications.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Edge Computing</h3>
+            <h4>
+              Discover the role of Linux in edge computing and its benefits for
+              real-time data processing and analysis.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for 5G Networks</h3>
+            <h4>
+              Explore how Linux is used in 5G networks for development,
+              deployment, and management of 5G infrastructure.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Smart Cities</h3>
+            <h4>
+              Understand the role of Linux in smart cities for development and
+              management of smart city infrastructure.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Autonomous Vehicles</h3>
+            <h4>
+              Learn how Linux is used in autonomous vehicles for development,
+              simulation, and control of autonomous systems.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+        <li>
+          <article>
+            <h3>Linux for Space Exploration</h3>
+            <h4>
+              Explore how Linux is used in space exploration for development and
+              management of space missions and systems.
+            </h4>
+            <button>Read more</button>
+          </article>
+        </li>
+        <hr />
+      </ol>
     </main>
 
     <footer>
-        <h5>
-            All copyright reserved @2025
-        </h5>
+      <h5>All copyright reserved @2025-26</h5>
     </footer>
-</body>
-
+  </body>
 </html>
