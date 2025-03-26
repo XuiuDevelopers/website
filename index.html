@@ -1,836 +1,125 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Blog</title>
-  </head>
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&family=Noto+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alert Dialog</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap');
 
-    * {
-      font-family: "JetBrains Mono";
-      font-weight: 500;
-    }
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
 
-    a {
-      color: #8aadf4;
-    }
+        body {
+            background-color: #222226;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            font-family: 'Inter', sans-serif;
+        }
 
-    button {
-      background-color: #c6a0f6;
-      border: 0px;
-      color: #181926;
-      font-weight: 700;
-    }
-    main ol hr {
-      background: #cad3f5;
-      border: 0px;
-      height: 2px;
-    }
-  </style>
-  <body style="background: #181926; color: #cad3f5">
-    <header style="background: #1e2030; padding: 8px; margin: 4px; border-radius: 5px;">
-      <nav>
-        <h1>BLOGS BY MR</h1>
-        <ul>
-          <li><a href="#">Home</a></li>
-          <li><a href="#">News</a></li>
-          <li><a href="#">Support</a></li>
-          <li><a href="#">Github</a></li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <ol>
-        <li>
-          <article>
-            <h3>Free Fire: The Ultimate Mobile Battle Royale Experience</h3>
-            <h4>Discover the thrilling world of Free Fire, a popular mobile battle royale game with intense gameplay and unique features.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku: The Iconic Anime Hero</h3>
-            <h4>Explore the journey of Goku, the main protagonist of the Dragon Ball series, and his impact on the anime world.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire Max: Enhanced Gaming Experience</h3>
-            <h4>Learn about Free Fire Max, the enhanced version of Free Fire with improved graphics, lighting, and sound effects.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Character Development in Dragon Ball</h3>
-            <h4>Delve into the character development of Goku from a young boy to a powerful warrior in the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire World Series: A Record-Breaking Event</h3>
-            <h4>Find out how the Free Fire World Series became one of the most-watched esports events, reaching over 5.4 million peak live viewers.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Impact on Anime Culture</h3>
-            <h4>Explore how Goku has influenced anime culture and inspired other creators in the industry.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: Craftland Feature</h3>
-            <h4>Discover the Craftland feature in Free Fire, which allows players to design their own maps using an in-game builder tool.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Transformation into a Super Saiyan</h3>
-            <h4>Learn about Goku's iconic transformation into a Super Saiyan and its significance in the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: Gameplay Mechanics</h3>
-            <h4>Understand the gameplay mechanics of Free Fire, including character abilities, weapons, and survival strategies.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Role as a Role Model</h3>
-            <h4>Explore how Goku serves as a role model for many fans and the values he represents in the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: Popularity in Tier-2 and Tier-3 Cities</h3>
-            <h4>Find out why Free Fire is particularly popular in Tier-2 and Tier-3 cities and its impact on the gaming community.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Battles and Challenges</h3>
-            <h4>Relive some of Goku's most epic battles and challenges throughout the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: In-Game Items and Customization</h3>
-            <h4>Learn about the various in-game items and customization options available in Free Fire.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Relationships with Other Characters</h3>
-            <h4>Explore Goku's relationships with other characters in the Dragon Ball series and their impact on his journey.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: Esports and Competitive Scene</h3>
-            <h4>Discover the competitive scene of Free Fire and its impact on the esports industry.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Legacy in Anime</h3>
-            <h4>Learn about Goku's legacy in the anime world and his influence on other popular series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: Tips and Strategies for Winning</h3>
-            <h4>Get tips and strategies to improve your gameplay and increase your chances of winning in Free Fire.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Training and Power-Ups</h3>
-            <h4>Find out how Goku trains and gains power-ups throughout the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: Comparison with Other Battle Royale Games</h3>
-            <h4>Compare Free Fire with other popular battle royale games and see what sets it apart.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Impact on Popular Culture</h3>
-            <h4>Explore how Goku has influenced popular culture beyond the anime world.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: Future Updates and Features</h3>
-            <h4>Stay updated on the future updates and features coming to Free Fire.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Most Memorable Quotes</h3>
-            <h4>Relive some of Goku's most memorable quotes from the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play and Get Started</h3>
-            <h4>Learn the basics of how to play Free Fire and get started with the game.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Evolution Throughout the Series</h3>
-            <h4>Track Goku's evolution from a young boy to a powerful warrior throughout the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: Best Characters and Abilities</h3>
-            <h4>Discover the best characters and their abilities in Free Fire.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with Iconic Villains</h3>
-            <h4>Relive Goku's fights with iconic villains like Frieza, Cell, and Majin Buu.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Improve Your Skills</h3>
-            <h4>Get tips on how to improve your skills and become a better player in Free Fire.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Friendships and Allies</h3>
-            <h4>Explore Goku's friendships and alliances with other characters in the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: Understanding the Map and Locations</h3>
-            <h4>Learn about the different maps and locations in Free Fire and how to use them to your advantage.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Journey to Becoming a Super Saiyan God</h3>
-            <h4>Follow Goku's journey to becoming a Super Saiyan God in Dragon Ball Super.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use Vehicles Effectively</h3>
-            <h4>Learn how to use vehicles effectively in Free Fire to gain an advantage in the game.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Impact on the Anime Industry</h3>
-            <h4>Explore how Goku has influenced the anime industry and inspired other creators.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: Tips for Surviving the Battle Royale</h3>
-            <h4>Get tips on how to survive the battle royale mode in Free Fire and emerge as the last player standing.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Training with Master Roshi</h3>
-            <h4>Learn about Goku's training with Master Roshi and how it shaped his fighting skills.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Master the Clash Squad Mode</h3>
-            <h4>Get tips on how to master the Clash Squad mode in Free Fire and dominate your opponents.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with Vegeta</h3>
-            <h4>Relive Goku's intense fights with Vegeta and their rivalry throughout the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use the Gloo Wall Effectively</h3>
-            <h4>Learn how to use the Gloo Wall effectively in Free Fire to protect yourself and gain an advantage in battles.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Adventures in the Other World</h3>
-            <h4>Explore Goku's adventures in the Other World and his encounters with various characters.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play Solo vs. Squad Modes</h3>
-            <h4>Learn the differences between playing solo and squad modes in Free Fire and how to excel in each.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Androids</h3>
-            <h4>Relive Goku's fights with the Androids and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use Weapons Effectively</h3>
-            <h4>Learn how to use different weapons effectively in Free Fire to gain an advantage in battles.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Red Ribbon Army</h3>
-            <h4>Relive Goku's fights with the Red Ribbon Army and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play on Different Devices</h3>
-            <h4>Learn how to play Free Fire on different devices and optimize your gameplay experience.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Saiyans</h3>
-            <h4>Relive Goku's fights with the Saiyans and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use the Map to Your Advantage</h3>
-            <h4>Learn how to use the map to your advantage in Free Fire and gain a strategic edge over your opponents.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Ginyu Force</h3>
-            <h4>Relive Goku's fights with the Ginyu Force and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play with Friends</h3>
-            <h4>Learn how to play Free Fire with friends and coordinate your strategies to win battles.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Cell Games</h3>
-            <h4>Relive Goku's fights during the Cell Games and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use Healing Items Effectively</h3>
-            <h4>Learn how to use healing items effectively in Free Fire to stay alive and win battles.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Tournament of Power</h3>
-            <h4>Relive Goku's fights during the Tournament of Power and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play on PC</h3>
-            <h4>Learn how to play Free Fire on PC and optimize your gameplay experience with enhanced controls and graphics.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe Survival Saga</h3>
-            <h4>Relive Goku's fights during the Universe Survival Saga and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use the Mini-Map Effectively</h3>
-            <h4>Learn how to use the mini-map effectively in Free Fire to track enemies and gain a strategic advantage.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Moro Arc</h3>
-            <h4>Relive Goku's fights during the Moro Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play on Mobile</h3>
-            <h4>Learn how to play Free Fire on mobile devices and optimize your gameplay experience with touch controls.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Granolah Arc</h3>
-            <h4>Relive Goku's fights during the Granolah Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use the Ping System Effectively</h3>
-            <h4>Learn how to use the ping system effectively in Free Fire to communicate with your team and gain a tactical advantage.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Super Hero Arc</h3>
-            <h4>Relive Goku's fights during the Super Hero Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play on Tablet</h3>
-            <h4>Learn how to play Free Fire on a tablet and optimize your gameplay experience with a larger screen.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Black Frieza Arc</h3>
-            <h4>Relive Goku's fights during the Black Frieza Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use the Chat System Effectively</h3>
-            <h4>Learn how to use the chat system effectively in Free Fire to communicate with your team and coordinate strategies.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Future Trunks Arc</h3>
-            <h4>Relive Goku's fights during the Future Trunks Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play on Console</h3>
-            <h4>Learn how to play Free Fire on console and optimize your gameplay experience with a controller.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe 6 Arc</h3>
-            <h4>Relive Goku's fights during the Universe 6 Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use the Emote System Effectively</h3>
-            <h4>Learn how to use the emote system effectively in Free Fire to express yourself and interact with other players.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe 7 Arc</h3>
-            <h4>Relive Goku's fights during the Universe 7 Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play on Emulator</h3>
-            <h4>Learn how to play Free Fire on an emulator and optimize your gameplay experience with enhanced controls and graphics.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe 11 Arc</h3>
-            <h4>Relive Goku's fights during the Universe 11 Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use the Inventory System Effectively</h3>
-            <h4>Learn how to use the inventory system effectively in Free Fire to manage your items and gear.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe 12 Arc</h3>
-            <h4>Relive Goku's fights during the Universe 12 Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play on Cloud Gaming</h3>
-            <h4>Learn how to play Free Fire on cloud gaming platforms and optimize your gameplay experience with low latency and high performance.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe 13 Arc</h3>
-            <h4>Relive Goku's fights during the Universe 13 Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use the Settings Menu Effectively</h3>
-            <h4>Learn how to use the settings menu effectively in Free Fire to customize your gameplay experience.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe 14 Arc</h3>
-            <h4>Relive Goku's fights during the Universe 14 Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play on Browser</h3>
-            <h4>Learn how to play Free Fire on a browser and optimize your gameplay experience with instant access and no downloads.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe 15 Arc</h3>
-            <h4>Relive Goku's fights during the Universe 15 Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use the Store System Effectively</h3>
-            <h4>Learn how to use the store system effectively in Free Fire to purchase items and customize your character.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe 16 Arc</h3>
-            <h4>Relive Goku's fights during the Universe 16 Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play on Streaming Platforms</h3>
-            <h4>Learn how to play Free Fire on streaming platforms and optimize your gameplay experience with live interaction and engagement.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe 17 Arc</h3>
-            <h4>Relive Goku's fights during the Universe 17 Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use the Battle Pass System Effectively</h3>
-            <h4>Learn how to use the battle pass system effectively in Free Fire to unlock rewards and progress through the seasons.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe 18 Arc</h3>
-            <h4>Relive Goku's fights during the Universe 18 Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play on Virtual Reality</h3>
-            <h4>Learn how to play Free Fire on virtual reality platforms and optimize your gameplay experience with immersive visuals and interaction.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe 19 Arc</h3>
-            <h4>Relive Goku's fights during the Universe 19 Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Use the Event System Effectively</h3>
-            <h4>Learn how to use the event system effectively in Free Fire to participate in limited-time events and earn exclusive rewards.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Goku's Fights with the Universe 20 Arc</h3>
-            <h4>Relive Goku's fights during the Universe 20 Arc and their impact on the Dragon Ball series.</h4>
-            <button>Read more</button>
-            <h6>2024-10-29 Monday</h6>
-          </article>
-        </li>
-        <hr />
-        <li>
-          <article>
-            <h3>Free Fire: How to Play on Augmented Reality</h3>
-            <h4>Learn how to play Free Fire on augmented reality platforms and optimize your gameplay experience with interactive elements and enhanced visuals.</h4>
-            <button>Read more</button>
-            <h6>2025-03-13 Wednesday</h6>
-          </article>
-        </li>
-        <hr />
+        button {
+            background-color: #48484b;
+            color: #f0f0f0;
+            border: none;
+            padding: 8px 16px;
+            font-size: 15px;
+            font-weight: 700;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.2s ease-in-out;
+        }
+
+        button:hover {
+            background-color: #5c5c5f;
+        }
+
+        dialog {
+            background-color: #343437;
+            border: none;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+            animation: bounceIn 0.6s ease-in-out;
+            text-align: center;
+            width: 300px;
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+
+            &::backdrop{
+                background-color: rgba(0, 0, 0, 0.6);
+            }
+        }
+
         
-      </ol>
-    </main>
-    <footer>
-      <h6>All copyrights reserved 2025-26</h6>
-    </footer>
-  </body>
+
+        @keyframes bounceIn {
+            0% { transform: translate(-50%, -50%) scale(0.8); opacity: 0; }
+            50% { transform: translate(-50%, -50%) scale(1.1); opacity: 1; }
+            100% { transform: translate(-50%, -50%) scale(1); }
+        }
+
+        .dialog-header {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #f0f0f0;
+        }
+
+        .dialog-body {
+            font-size: 14px;
+            color: #d0d0d0;
+            margin-bottom: 20px;
+        }
+
+        .dialog-buttons {
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        .save-btn {
+            background-color: #2d74da;
+            padding: 10px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 700;
+        }
+
+        .discard-btn {
+            background-color: #a63d40;
+            padding: 10px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 700;
+        }
+
+        .cancel-btn {
+            background-color: #5c5c5f;
+            padding: 10px;
+            border-radius: 8px;
+            color: white;
+            font-weight: 700;
+        }
+    </style>
+</head>
+<body>
+    <button onclick="document.getElementById('alertDialog').showModal()">Open</button>
+
+    <dialog id="alertDialog">
+        <div class="dialog-header">Save Changes?</div>
+        <div class="dialog-body">Open document contains unsaved changes. Changes which are not saved will be permanently lost.</div>
+        <div class="dialog-buttons">
+            <button class="save-btn">Save</button>
+            <button class="discard-btn">Discard</button>
+            <button class="cancel-btn" onclick="document.getElementById('alertDialog').close()">Cancel</button>
+        </div>
+    </dialog>
+</body>
 </html>
