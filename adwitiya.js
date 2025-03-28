@@ -1,3 +1,17 @@
+class StyleManager {
+    static body(color) {
+        document.body.style.backgroundColor = "#242424";
+        document.body.style.display = "flex";
+        document.body.style.alignItems = "center";
+        document.body.style.justifyContent = "center";
+        document.body.style.height = "100vh";
+        document.body.style.margin = "0";
+    }
+}
+
+
+StyleManager.body();
+
 class AdwButton extends HTMLElement {
     constructor() {
         super()
@@ -39,31 +53,3 @@ class AdwButton extends HTMLElement {
 }
 
 customElements.define("adw-button",AdwButton)
-
-
-class AdwBody extends HTMLElement {
-    constructor() {
-        super();
-        const shadow = this.attachShadow({ mode: "closed" });
-
-        const container = document.createElement("div");
-
-        const styles = {
-            background: "#242424",
-            minHeight: "100vh",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
-        };
-
-        Object.assign(container.style, styles);
-
-        shadow.appendChild(container);
-
-        while (this.firstChild) {
-            container.appendChild(this.firstChild);
-        }
-    }
-}
-
-customElements.define("adw-body", AdwBody);
